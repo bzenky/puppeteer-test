@@ -3,6 +3,10 @@ const mobile = puppeteer.devices['iPhone X']
 
 const exampleSites = [
     {
+        name: 'Mercado Livre',
+        url: 'http://mercadolivre.com.br',
+    },
+    {
         name: 'Amazon AWS',
         url: 'https://aws.amazon.com/',
     },
@@ -10,11 +14,7 @@ const exampleSites = [
         name: 'Vercel',
         url: 'http://vercel.com',
     },
-    {
-        name: 'Mercado Livre',
-        url: 'http://mercadolivre.com.br',
-    },
-];
+]
 
 function wait(ms) {
     return new Promise(resolve => setTimeout(() => resolve(), ms))
@@ -45,9 +45,9 @@ function wait(ms) {
 
         await page.evaluate(_ => {
             window.scrollTo(0, 0)
-        })
+        });
 
-        await wait(200);
+        await wait(200)
 
         await page.screenshot({ path: `./screenshot/${exampleSites[i].name}-desktop.jpeg`, quality: 20, fullPage: true })
 

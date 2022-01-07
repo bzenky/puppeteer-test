@@ -14,7 +14,7 @@
 <hr>
 
 ### Simple Screenshot test with Puppeteer
-<p> There is some dificulties to get a correct screenshot because of the image´s lazy loading configs, it´s very possible that each(some) site(s) need a code adaptation to work correctly.
+<p> There are some dificulties to get a correct screenshot because of the image´s lazy loading configs, it´s very possible that each(some) site(s) need a code adaptation to work correctly.
 <p> In this version, when the site is oppened, the scroll is done through all the site and it´s added a delay to load the images, thereafter it´s taken the screenshots(desktop/mobile)</p>
 
 <p>In this test these following sites are being used:</p>

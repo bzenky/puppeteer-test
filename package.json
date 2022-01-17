@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bzenky/puppeteer-test#readme",
   "dependencies": {
+    "fs-extra": "^10.0.0",
     "puppeteer": "^13.0.1"
   }
 }
